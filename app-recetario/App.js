@@ -1,3 +1,4 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
@@ -8,6 +9,8 @@ import Prueba from './screen/Prueba';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+
   return (
     <NavigationContainer>
       <Stack.Navigator>
