@@ -1,0 +1,52 @@
+[
+    {
+    "id": 1,
+    "name": "Pizza",
+    "image": "pizza.jpeg",
+    "favorite": false,
+    "ingredients":  [
+            {"name":"Masa","quantity":"50gr"},
+            {"name":"Salsa Tomate","quantity":"30ml"},
+            {"name":"Peperoni","quantity":"20gr"},
+            {"name":"Queso","quantity":"40gr"}
+        ]
+    },
+    {
+    "id": 2,
+    "name": "Pozole",
+    "image": "",
+    "favorite": false,
+    "ingredients":  [
+        {"name":"Maiz","quantity":"300gr"},
+        {"name":"Carne de puerco","quantity":"200gr"},
+        {"name":"Lechuga","quantity":"10gr"},
+        {"name":"Sal","quantity":"2cdas"}
+    ]
+    },
+    {
+    "id": 3,
+    "name": "Spaguetti bolognesa",
+    "image": "",
+    "favorite": false,
+    "ingredients":  [
+        {"name":"Pasta spaguetti","quantity":"150gr"},
+        {"name":"Salsa Tomate","quantity":"30ml"},
+        {"name":"Hierbas finas","quantity":"5gr"},
+        {"name":"Queso parmesano","quantity":"Al gusto"},
+        {"name":"Sal","quantity":"10gr"},
+        {"name":"Carne molida","quantity":"100gr"}
+    ]
+    },
+    {
+    "id": 4,
+    "name": "Mole",
+    "image": "",
+    "favorite": false,
+    "ingredients":  [
+        {"name":"Pollo","quantity":"150gr"},
+        {"name":"Chile guajillo","quantity":"2 chiles"},
+        {"name":"Ajonjoli","quantity":"20gr"},
+        {"name":"Mole","quantity":"80gr"}
+    ]
+    }
+]
