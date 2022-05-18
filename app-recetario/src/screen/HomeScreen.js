@@ -5,7 +5,6 @@ import { StyleSheet, Text, View, TouchableHighlight ,FlatList, Image} from 'reac
 
 import Search from '../components/Search';
 import Carousel from '../components/Carousel';
-import ListItem from '../components/ListItem';
 
 import Recetario from '../data/recetario.json'
 
@@ -14,9 +13,7 @@ export default function HomeScreen({navigation}) {
    <View style={styles.container}>
       <Search/> 
        <Carousel title="Trending" data={Recetario} />
-       <Carousel title="Recent"/>
-       
-     
+       <Carousel title="Recent"/> 
    </View> 
    
   );
@@ -25,7 +22,9 @@ export default function HomeScreen({navigation}) {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-
+      backgroundColor: 'white',
+      width: '100%',
+      height: '100%'
     }
    
   });

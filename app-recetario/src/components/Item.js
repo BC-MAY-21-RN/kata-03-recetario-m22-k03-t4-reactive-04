@@ -9,13 +9,14 @@ const Item = ({ item }) => {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.texto}>{name} </Text>
-        <Image
+      <Image
         style={styles.tinyLogo}
         source={{
           uri: 'https://reactnative.dev/img/tiny_logo.png',
         }}
-      />    
+      />   
+        <Text style={styles.texto}>{name} </Text>
+         
     </View>
   );
 };
@@ -26,23 +27,21 @@ export default Item;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 10,
-    backgroundColor: "aliceblue",
-    justifyContent: "space-between"
+    backgroundColor: "grey",
+    justifyContent: "center",
+    width: 100,
+    height: 100,
+    alignItems:"center",
+
   },
   tinyLogo: {
     width: 50,
     height: 50,
-    paddingLeft: 20,
-    
-  },
-  logo: {
-    width: 66,
-    height: 58,
   },
   texto: {
     color: "red",
-    margin:40,
+    maxWidth:100,
+    textAlign: "center"
     
   },
 });
