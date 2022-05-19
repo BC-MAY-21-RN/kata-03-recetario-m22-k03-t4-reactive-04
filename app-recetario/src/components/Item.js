@@ -3,20 +3,16 @@ import { View, StyleSheet, Text, TouchableHighlight, Image } from "react-native"
 import { useNavigation } from '@react-navigation/native';
 import ViewReceta from "../screen/ViewReceta";
 
-const Item = ({ item }) => {
-  const { id, name, image, ingredients } = item;
-  console.log(image);
 
+const Item = ({ item }) => {
+  const {  name, image } = item;
   return (
     <View style={styles.container}>
       <Image
-        style={styles.tinyLogo}
-        source={{
-          uri: 'https://reactnative.dev/img/tiny_logo.png',
-        }}
+        style={styles.image}
+        source={require(`../image/${image}`)}
       />   
-        <Text style={styles.texto}>{name} </Text>
-         
+        <Text style={styles.texto}>{name} </Text> 
     </View>
   );
 };
@@ -26,22 +22,24 @@ export default Item;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "grey",
+    backgroundColor: "transparent",
     justifyContent: "center",
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 150,
     alignItems:"center",
 
   },
-  tinyLogo: {
-    width: 50,
-    height: 50,
+  image: {
+    width: 140,
+    height: 120,
+    borderRadius:10,
   },
   texto: {
-    color: "red",
+    color: "white",
     maxWidth:100,
-    textAlign: "center"
+    textAlign: "center",
+    fontSize:15,
+    paddingTop:10
     
   },
 });

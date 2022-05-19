@@ -2,7 +2,7 @@
     {
     "id": 1,
     "name": "Pizza",
-    "image": "pizza.jpeg",
+    "image": "pizza.jpg",
     "favorite": false,
     "ingredients":  [
             {"name":"Masa","quantity":"50gr"},
@@ -14,7 +14,7 @@
     {
     "id": 2,
     "name": "Pozole",
-    "image": "",
+    "image": "pozole.jpg",
     "favorite": false,
     "ingredients":  [
         {"name":"Maiz","quantity":"300gr"},
@@ -26,7 +26,7 @@
     {
     "id": 3,
     "name": "Spaguetti",
-    "image": "",
+    "image": "spaghetti.jpg",
     "favorite": false,
     "ingredients":  [
         {"name":"Pasta spaguetti","quantity":"150gr"},
@@ -40,7 +40,7 @@
     {
     "id": 4,
     "name": "Mole",
-    "image": "",
+    "image": "mole.jpg",
     "favorite": false,
     "ingredients":  [
         {"name":"Pollo","quantity":"150gr"},

@@ -1,21 +1,15 @@
 import react from "react";
 import { View, StyleSheet, TextInput } from "react-native";
-import { Icon } from 'react-native-elements'
+import { Icon, SearchBar } from 'react-native-elements';
 
 
 const Search = () => {
     return (
       
-        <View style={styles.searchSection}>
-        <Icon
-          name='search'  style={styles.searchIcon}/>
-        <TextInput
-          style={styles.input}
-         /// onChangeText={onChangeNumber}
-         /// value={number}
-          placeholder="What do you want to eat?"
-          keyboardType="numeric"
-        />
+        <View >
+        <SearchBar
+        placeholder="Type Here..."
+      />   
       </View>
       
     );

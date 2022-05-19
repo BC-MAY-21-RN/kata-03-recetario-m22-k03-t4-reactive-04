@@ -22,7 +22,7 @@ export default function HomeScreen({navigation}) {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'white',
+      backgroundColor: 'rgb(58,62,66)',
       width: '100%',
       height: '100%'
     }

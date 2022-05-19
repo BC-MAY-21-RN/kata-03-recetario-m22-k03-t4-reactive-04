@@ -17,12 +17,11 @@ const ListItem = ({ item }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 10,
     justifyContent: "center",
-    width:120,
-    height:120,
+    width:160,
+    height:170,
     alignItems:"center",
-    backgroundColor:"white",
+    backgroundColor:"transparent",     
   }
  
 });
