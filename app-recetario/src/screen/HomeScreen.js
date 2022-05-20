@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View, TouchableHighlight ,FlatList, Image} from 'react-native';
-
 import Search from '../components/Search';
 import Carousel from '../components/Carousel';
 
