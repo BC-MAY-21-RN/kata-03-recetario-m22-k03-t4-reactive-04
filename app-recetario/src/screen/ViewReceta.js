@@ -1,10 +1,6 @@
 import React from 'react';
-import {Text,View,ImageBackground,FlatList, StyleSheet} from 'react-native';
-import { useNavigation ,useRoute} from '@react-navigation/native';
-import ListIngredients from '../components/ListIngredients';
-
-import TouchBar from '../components/TouchBar';
-
+import {View,StyleSheet} from 'react-native';
+import {useRoute} from '@react-navigation/native';
 import RecetaHeader from '../components/RecetaHeader';
 import RecetaBody from '../components/RecetaBody';
 

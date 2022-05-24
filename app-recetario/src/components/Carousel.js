@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import ListItem from "../components/ListItem";
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { fonts } from "react-native-elements/dist/config";

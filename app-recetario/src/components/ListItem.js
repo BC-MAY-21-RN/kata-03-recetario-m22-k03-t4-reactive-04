@@ -1,6 +1,6 @@
-import react from "react";
-import { View, StyleSheet, Text, TouchableHighlight } from "react-native";
-import { useNavigation ,useRoute} from '@react-navigation/native';
+import React from "react";
+import {StyleSheet, TouchableHighlight } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 import Item from "../components/Item";
 
 const ListItem = ({ item }) => {

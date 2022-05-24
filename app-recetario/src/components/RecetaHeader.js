@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet, Image, ImageBackground,TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, ImageBackground,TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/EvilIcons";
-import { useNavigation ,useRoute} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 const HeaderReceta = (props) => {
   const { title, imagen } = props;

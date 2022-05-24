@@ -1,7 +1,6 @@
-import react from "react";
-import { View, StyleSheet, Text, TouchableHighlight, Image } from "react-native";
-import { useNavigation } from '@react-navigation/native';
-import ViewReceta from "../screen/ViewReceta";
+import React from "react";
+import { View, StyleSheet, Text, Image } from "react-native";
+
 
 
 const Item = ({ item }) => {
