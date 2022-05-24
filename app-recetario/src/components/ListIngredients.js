@@ -15,20 +15,26 @@ const ListIngredients = ({item}) => {
   };
 
   const styles = StyleSheet.create({
+    setRow: {
+      flex:1,
+      flexDirection: 'row',
+      borderBottomWidth:1,
+      borderBottomColor:"white",
+      paddingBottom:10,
+      margin:20
+    },
     font: {
-      fontSize: 32,
-      flex: 3,
-      color: 'white'
+      fontSize: 18,
+      flex: 4,
+      color: 'white',
+      paddingLeft:20
     },
     font2: {
-      fontSize: 32,
-      flex: 3,
-      color: 'white'
-    },
-    setRow: {
-      flex: 6,
-      flexDirection: 'row',
+      fontSize: 18,
+      flex: 1,
+      color: 'white',
     }
+    
   })
 
   export default ListIngredients;

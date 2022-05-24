@@ -5,56 +5,43 @@ import ListIngredients from '../components/ListIngredients';
 
 import TouchBar from '../components/TouchBar';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
-
+import RecetaHeader from '../components/RecetaHeader';
+import RecetaBody from '../components/RecetaBody';
 
 export default function ViewReceta() {
     const route = useRoute()
-    console.log(route.params.item.ingredients)
+   // console.log(route.params.item)
+
+    ///const {image , name } = route.params.item;
     return (
-        <View style={styles.container}>
-            
-           
-           
-
-            <Image style={styles.image}
-            source={require(`../image/${route.params.item.image}`)}>
-            <Text>hola</Text>
-            </Image>
-
-
-            <Text>{route.params.item.name} </Text>
-           <FlatList
-            data={route.params.item.ingredients}
-            keyExtractor={(item) => item.name}
-            pagingEnabled={true}
-            renderItem={({item,index})=>
-          <ListIngredients item={item} />}
-
-      />
+        <View style={styles.container}>  
+            <RecetaHeader style={styles.header} title={route.params.item.name} imagen={route.params.item.image } />
+            <RecetaBody style={styles.body} data={route.params.item.ingredients}  />
         </View>
     );
 }
 
 const styles = StyleSheet.create({
       container: {
-        backgroundColor: 'rgb(59,62,66)',
         flex:1,
-      },
-      image: {
-        width: 350,
-        height: 400,
-        borderRadius:10,
+        backgroundColor: 'rgb(59,62,66)',
         
       },
-      button: {
-        fontSize:30,
-        color:'red',
-  
+      header: {
+       flex:1,
+        height:300,
+        backgroundColor: "yellow",    
       },
-      iconButton: {
-        position:"absolute",
-        fontSize:30,
-        color:'red',
-      },
+      body: {
+        flex:1,
+         backgroundColor: "red",
+         height:300,
+       },
+     
+      
+      
 })
+
+/// backgroundColor: 'rgb(59,62,66)',
+
+///<Image style={styles.image} source={require(`../image/${route.params.item.image}`)}></Image>

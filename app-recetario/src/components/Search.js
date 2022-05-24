@@ -6,11 +6,18 @@ import { Icon, SearchBar } from 'react-native-elements';
 const Search = () => {
     return (
       
-        <View >
-        <SearchBar
-        placeholder="Type Here..."
-      />   
+      <View>
+        
+        <TextInput
+          style={styles.input}
+         /// onChangeText={onChangeNumber}
+         /// value={number}
+          placeholder="What do you want to eat?"
+          keyboardType="numeric"
+        />
       </View>
+
+      
       
     );
   };
