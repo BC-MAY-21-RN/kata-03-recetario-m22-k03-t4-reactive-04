@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,Image,FlatList, StyleSheet} from 'react-native';
+import {Text,View,ImageBackground,FlatList, StyleSheet} from 'react-native';
 import { useNavigation ,useRoute} from '@react-navigation/native';
 import ListIngredients from '../components/ListIngredients';
 
