@@ -6,10 +6,10 @@ import { Icon, SearchBar } from 'react-native-elements';
 const Search = () => {
     return (
       
-        <View >
+      <View>
         <SearchBar
         placeholder="Type Here..."
-      />   
+        />   
       </View>
       
     );

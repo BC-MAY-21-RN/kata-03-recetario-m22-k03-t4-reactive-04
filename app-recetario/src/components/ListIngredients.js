@@ -1,6 +1,7 @@
 import react from "react";
 import { View, Text, StyleSheet} from "react-native";
 
+
 const ListIngredients = ({item}) => {
 
     const {  name, quantity } = item;
@@ -10,7 +11,7 @@ const ListIngredients = ({item}) => {
           <Text style={styles.font}>{name}</Text>
           <Text style={styles.font2}>{quantity}</Text>
         </View>
-      
+
     );
   };
 

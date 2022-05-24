@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,View,Image,FlatList, StyleSheet} from 'react-native';
+import {Text,View,ImageBackground,FlatList, StyleSheet} from 'react-native';
 import { useNavigation ,useRoute} from '@react-navigation/native';
 import ListIngredients from '../components/ListIngredients';
 
@@ -15,23 +15,25 @@ export default function ViewReceta() {
         <View style={styles.container}>
             
            
-           
 
-            <Image style={styles.image}
+          <ImageBackground style={styles.image}
             source={require(`../image/${route.params.item.image}`)}>
-            <Text>hola</Text>
-            </Image>
+            <TouchBar></TouchBar>   
+          </ImageBackground>
+            
 
 
-            <Text>{route.params.item.name} </Text>
-           <FlatList
+          <Text style={styles.text}>{route.params.item.name} </Text>
+          <FlatList
             data={route.params.item.ingredients}
             keyExtractor={(item) => item.name}
             pagingEnabled={true}
             renderItem={({item,index})=>
           <ListIngredients item={item} />}
+          
 
       />
+          
         </View>
     );
 }
@@ -42,16 +44,17 @@ const styles = StyleSheet.create({
         flex:1,
       },
       image: {
-        width: 350,
-        height: 400,
-        borderRadius:10,
-        
+        width: '100%',
+        height: 500,
+        borderRadius:10,  
       },
       button: {
         fontSize:30,
         color:'red',
   
       },
+
+      
       iconButton: {
         position:"absolute",
         fontSize:30,
