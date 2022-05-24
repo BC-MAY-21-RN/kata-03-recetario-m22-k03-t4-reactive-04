@@ -28,7 +28,7 @@ const RecetaBody= (props) => {
 const styles = StyleSheet.create({
     container: {
       flex:2,
-      backgroundColor: 'rgb(59,62,66)',
+      backgroundColor: '#343435',
       
     },
     title: {
