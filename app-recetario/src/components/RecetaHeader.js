@@ -4,9 +4,9 @@ import Icon from "react-native-vector-icons/EvilIcons";
 import { useNavigation } from '@react-navigation/native';
 
 const HeaderReceta = (props) => {
-  const { title, imagen } = props;
+  const { title, imagen,id } = props;
   const navigation = useNavigation();
-  console.log(imagen);
+  //console.log(id);
 
   return (
     <View style={styles.container}>
@@ -15,7 +15,7 @@ const HeaderReceta = (props) => {
         style={styles.image}
       >
         <View style={styles.iconBar}>    
-         <TouchableOpacity style={{flex:4}} onPress={() => navigation.navigate("Home")}><Text><Icon style={[styles.icon]} name="close"></Icon></Text></TouchableOpacity>
+         <TouchableOpacity style={{flex:4}} onPress={() => navigation.navigate("Home",{id})}><Text><Icon style={[styles.icon]} name="close"></Icon></Text></TouchableOpacity>
          <TouchableOpacity style={{flex:1}} ><Text><Icon style={[styles.icon]} name="share-apple"></Icon></Text></TouchableOpacity>
          <TouchableOpacity style={{flex:1}} ><Text><Icon style={[styles.icon]} name="heart"></Icon></Text></TouchableOpacity>
         </View>
