@@ -7,7 +7,7 @@ const HeaderReceta = (props) => {
   const { title, imagen,id } = props;
   const navigation = useNavigation();
   //console.log(id);
-
+  //source={require(`../image/${imagen}`)}
   return (
     <View style={styles.container}>
       <ImageBackground
